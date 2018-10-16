@@ -60,7 +60,7 @@ public class Helper {
 
     public static void printWireValuesBinary(ArrayList<Wire> w) {
         System.out.print("In binary: ");
-        for (int i = 0; i < w.size(); i++) {
+        for (int i = w.size()-1; i >=0; i--) {
             if(w.get(i).getState()){
                 System.out.print("1");
             } else {
